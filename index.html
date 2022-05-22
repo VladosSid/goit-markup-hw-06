@@ -451,25 +451,41 @@
           </svg>
         </button>
         <div class="block-modal-form">
-          <h2>Оставьте свои данные, мы вам перезвоним</h2>
+          <h2 class="modal-titel">Оставьте свои данные, мы вам перезвоним</h2>
           <form class="modal-form">
-            <label for="name-modal">Имя</label>
-            <input type="text" name="name" id="name-modal" class="name-modal" />
+            <!-- Данные заказчика -->
+            <div class="block-user-data">
+              <label for="name-modal" class="modal-label">Имя</label>
+              <input type="text" name="name" id="name-modal" class="input-modal" />
 
-            <label for="tel-modal">Телефон</label>
-            <input type="text" name="tel" id="tel-modal" class="tel-modal" />
+              <label for="tel-modal" class="modal-label">Телефон</label>
+              <input type="text" name="tel" id="tel-modal" class="input-modal" />
 
-            <label for="email-modal">Почта</label>
-            <input type="email" name="email" id="email-modal" class="email-modal" />
+              <label for="email-modal" class="modal-label">Почта</label>
+              <input type="email" name="email" id="email-modal" class="input-modal" />
 
-            <label for="comment-modal">Комментарий</label>
-            <textarea type="text" name="" id="comment-modal" class="comment-modal"></textarea>
+              <label for="comment-modal" class="modal-label">Комментарий</label>
+              <textarea
+                id="comment-modal"
+                class="modal-form-comment"
+                rows="5"
+                placeholder="Введите текст"
+              ></textarea>
+            </div>
 
-            <input type="checkbox" name="agreement" id="agreement-modal" class="agreement-modal" />
-            <label for="agreement-modal"
-              >Соглашаюсь с рассылкой и принимаю
-              <a href="">Условия договора</a>
-            </label>
+            <!-- Соглашенние с рассылкой -->
+            <div class="agreemenr-modal">
+              <input type="checkbox" name="agreement" id="agreement-modal" class="" />
+              <label for="agreement-modal" class="check-modal-label"
+                >Соглашаюсь с рассылкой и принимаю
+                <a href="" class="modal-treaty">Условия договора</a>
+              </label>
+            </div>
+
+            <!-- Кнопка отправки -->
+            <div class="block-modal-send">
+              <button type="submit" class="modal-send">Отправить</button>
+            </div>
           </form>
         </div>
       </div>

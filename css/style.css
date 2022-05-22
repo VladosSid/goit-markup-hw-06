@@ -666,6 +666,7 @@ img {
   top: 50%;
   transform: translate(-50%, -50%);
 
+  padding: 40px;
   width: 528px;
   height: 581px;
 
@@ -680,6 +681,7 @@ img {
   align-items: center;
   justify-content: center;
   position: absolute;
+
   right: 8px;
   top: 8px;
   width: 30px;
@@ -688,6 +690,113 @@ img {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+}
+
+.block-modal-form .modal-titel {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+
+  color: var(--primary-text-color);
+}
+
+/* ФОРМА */
+/* Данные заказчика */
+.modal-form .block-user-data {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 20px;
+}
+
+.block-user-data .modal-label {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+
+  color: var(--secondary-text-color);
+}
+
+.block-user-data .input-modal {
+  height: 40px;
+  margin-bottom: 10px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.block-user-data .modal-form-comment {
+  resize: none;
+
+  padding-top: 12px;
+  padding-left: 16px;
+  padding-bottom: 12px;
+  padding-right: 16px;
+
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+/* Соглашенние с рассылкой */
+.agreemenr-modal {
+  margin-bottom: var(--card-set-gap);
+}
+
+.agreemenr-modal .check-modal-label {
+  font-size: 14px;
+  line-height: 1.7;
+
+  color: var(--secondary-text-color);
+}
+
+.modal-treaty {
+  color: var(--accent-color);
+}
+
+/* Кнопка отправки */
+.block-modal-send {
+  display: flex;
+  justify-content: center;
+}
+
+.block-modal-send .modal-send {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-left: 56px;
+  padding-bottom: 10px;
+  padding-right: 56px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px;
+  border-radius: 4px;
+
+  color: var(--color-white-text);
+  background: var(--accent-color);
+
+  transition: background var(--timing-function);
+}
+
+.block-modal-send .modal-send:hover {
+  background: #188ce8;
 }
 
 /* Стилизация Портфолио */
