@@ -530,6 +530,10 @@ img {
 }
 
 /* Соцсети в подвале */
+.footer-block .social-media-footer {
+  margin-right: 94px;
+}
+
 .titel-footer {
   margin-bottom: 20px;
 
@@ -572,6 +576,118 @@ img {
   align-items: center;
   justify-content: center;
   fill: var(--color-white-text);
+}
+
+/* Подписка на рассылку */
+.subscribe-footer .titel-subscribe {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+
+  color: var(--color-white-text);
+  margin-bottom: 20px;
+}
+
+.subscribe-footer .subscribe-form {
+  display: flex;
+}
+
+.subscribe-form .subscribe-input {
+  width: 358px;
+  height: 50px;
+
+  margin-right: 12px;
+  padding-left: 18px;
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: rgba(47, 48, 58, 1);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-form .button-subscribe {
+  padding-top: 10px;
+  padding-right: 29px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px;
+  color: var(--color-white-text);
+}
+
+.subscribe-icon-footer {
+  margin-left: 10px;
+
+  fill: var(--color-white-text);
+}
+
+/* ----- МОДАЛЬНОЕ ОКНО ---- */
+.backdrop {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+
+  transition: opacity var(--timing-function), pointer-events var(--timing-function),
+    visibility var(--timing-function);
+}
+
+.backdrop.is-hidden {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.backdrop .modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 528px;
+  height: 581px;
+
+  background: var(--color-white-text);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal .button-close-backdrop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
 }
 
 /* Стилизация Портфолио */
@@ -713,57 +829,4 @@ img {
 
   font-size: 16px;
   line-height: 1.9;
-}
-
-/* ----- МОДАЛЬНОЕ ОКНО ---- */
-.backdrop {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-
-  transition: opacity var(--timing-function), pointer-events var(--timing-function),
-    visibility var(--timing-function);
-}
-
-.backdrop.is-hidden {
-  opacity: 1;
-  pointer-events: auto;
-  visibility: visible;
-}
-
-.backdrop .modal {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
-  width: 528px;
-  height: 581px;
-
-  background: var(--color-white-text);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
-
-.modal .button-close-backdrop {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  right: 8px;
-  top: 8px;
-  width: 30px;
-  height: 30px;
-
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
 }
