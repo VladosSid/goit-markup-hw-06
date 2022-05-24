@@ -452,25 +452,41 @@
         </button>
         <div class="block-modal-form">
           <h2 class="modal-titel">Оставьте свои данные, мы вам перезвоним</h2>
-          <form class="modal-form">
-            <!-- Данные заказчика -->
+          <!-- ФОРМА  -->
+          <form class="modal-form" autocomplete="off" <!-- Данные заказчика -->
             <div class="block-user-data">
-              <label for="name-modal" class="modal-label">Имя</label>
-              <input type="text" name="name" id="name-modal" class="input-modal" />
+              <label class="modal-label">
+                <span class="label-name">Имя</span>
+                <input type="text" name="name" class="input-modal" />
+                <svg width="18" height="18" class="package-icon-form">
+                  <use href="./images/symbol-defs.svg#person-field" class="form-icon"></use>
+                </svg>
+              </label>
 
-              <label for="tel-modal" class="modal-label">Телефон</label>
-              <input type="text" name="tel" id="tel-modal" class="input-modal" />
+              <label class="modal-label">
+                <span class="label-name">Телефон</span>
+                <input type="text" name="tel" class="input-modal" />
+                <svg width="18" height="18" class="package-icon-form">
+                  <use href="./images/symbol-defs.svg#phone-field" class="form-icon"></use>
+                </svg>
+              </label>
 
-              <label for="email-modal" class="modal-label">Почта</label>
-              <input type="email" name="email" id="email-modal" class="input-modal" />
+              <label class="modal-label">
+                <span class="label-name">Почта</span>
+                <input type="email" name="email" class="input-modal" />
+                <svg width="18" height="18" class="package-icon-form">
+                  <use href="./images/symbol-defs.svg#email-field" class="form-icon"></use>
+                </svg>
+              </label>
 
-              <label for="comment-modal" class="modal-label">Комментарий</label>
-              <textarea
-                id="comment-modal"
-                class="modal-form-comment"
-                rows="5"
-                placeholder="Введите текст"
-              ></textarea>
+              <label class="modal-label">
+                <span class="label-name">Комментарий</span>
+                <textarea
+                  class="modal-form-comment"
+                  rows="5"
+                  placeholder="Введите текст"
+                ></textarea>
+              </label>
             </div>
 
             <!-- Соглашенние с рассылкой -->
