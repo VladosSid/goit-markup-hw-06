@@ -287,6 +287,7 @@
     <!-- Подвал сайта -->
     <footer class="section-footer">
       <div class="container footer-block">
+        <!-- Контакты в подвале -->
         <div class="block-contact-footer">
           <a href="" class="logo color-footer"><span class="accent-logo">Web</span>Studio </a>
           <address class="">
@@ -303,6 +304,7 @@
             </ul>
           </address>
         </div>
+        <!-- Соцсети в подвале -->
         <div class="social-media-footer">
           <h2 class="titel-footer">присоединяйтесь</h2>
           <ul class="social-network-footer padding-list">
@@ -335,6 +337,27 @@
               </a>
             </li>
           </ul>
+        </div>
+        <!-- Подписка на рассылку -->
+        <div class="subscribe-footer">
+          <p class="titel-subscribe">Подпишитесь на рассылку</p>
+          <form class="subscribe-form">
+            <label for="email_subscribe_footer"></label>
+            <input
+              type="email"
+              name="email"
+              id="email_subscribe_footer"
+              class="subscribe-input"
+              placeholder="E-mail"
+            />
+
+            <button type="submit" class="button-subscribe">
+              Подписаться
+              <svg width="24" height="24" class="subscribe-icon-footer">
+                <use href="./images/symbol-defs.svg#subscribe"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>

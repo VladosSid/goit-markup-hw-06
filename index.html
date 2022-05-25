@@ -445,15 +445,18 @@
     <!-- МОДАЛЬНОЕ ОКНО -->
     <div class="backdrop" data-modal>
       <div class="modal">
+        <!-- Кнопка закрытия -->
         <button class="button-close-backdrop" data-modal-close>
-          <svg width="18" height="18">
+          <svg width="18" height="18" class="button-close-icon">
             <use href="./images/symbol-defs.svg#close-backdrop" width="18" height="18"></use>
           </svg>
         </button>
         <div class="block-modal-form">
+          <!-- Звголовок формы -->
           <h2 class="modal-titel">Оставьте свои данные, мы вам перезвоним</h2>
           <!-- ФОРМА  -->
-          <form class="modal-form" autocomplete="off" <!-- Данные заказчика -->
+          <!-- Данные заказчика -->
+          <form class="modal-form" autocomplete="off">
             <div class="block-user-data">
               <label class="modal-label">
                 <span class="label-name">Имя</span>
@@ -465,7 +468,7 @@
 
               <label class="modal-label">
                 <span class="label-name">Телефон</span>
-                <input type="text" name="tel" class="input-modal" />
+                <input type="tel" name="tel" class="input-modal" />
                 <svg width="18" height="18" class="package-icon-form">
                   <use href="./images/symbol-defs.svg#phone-field" class="form-icon"></use>
                 </svg>
@@ -489,11 +492,12 @@
               </label>
             </div>
 
-            <!-- Соглашенние с рассылкой -->
+            <!-- Соглашенние с рассылкой. ЧЕКБОКС -->
             <div class="agreemenr-modal">
-              <input type="checkbox" name="agreement" id="agreement-modal" class="" />
-              <label for="agreement-modal" class="check-modal-label"
-                >Соглашаюсь с рассылкой и принимаю
+              <label for="agreement-modal" class="check-modal-label">
+                <input type="checkbox" name="agreement" id="agreement-modal" class="check-modal" />
+                <span class="check-icon"></span>
+                Соглашаюсь с рассылкой и принимаю
                 <a href="" class="modal-treaty">Условия договора</a>
               </label>
             </div>

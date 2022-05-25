@@ -624,11 +624,19 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
 
-  background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 1px;
+
+  background: var(--accent-color);
   color: var(--color-white-text);
+
+  transition: background var(--timing-function);
+}
+
+.subscribe-form .button-subscribe:hover,
+.subscribe-form .button-subscribe:focus {
+  background: #188ce8;
 }
 
 .subscribe-icon-footer {
@@ -676,6 +684,7 @@ img {
   border-radius: 4px;
 }
 
+/* Кнопка закрытия */
 .modal .button-close-backdrop {
   display: flex;
   align-items: center;
@@ -692,6 +701,16 @@ img {
   border-radius: 50%;
 }
 
+.modal .button-close-icon {
+  transition: fill var(--timing-function);
+}
+
+.modal .button-close-icon:hover,
+.modal .button-close-icon:focus {
+  fill: var(--accent-color);
+}
+
+/* Заголовок формы */
 .block-modal-form .modal-titel {
   margin-bottom: 12px;
 
@@ -712,6 +731,12 @@ img {
   margin-bottom: 20px;
 }
 
+.block-user-data .modal-label {
+  position: relative;
+
+  margin-bottom: 10px;
+}
+
 .modal-label .label-name {
   display: block;
   margin-bottom: 4px;
@@ -723,12 +748,6 @@ img {
   color: var(--secondary-text-color);
 }
 
-.block-user-data .modal-label {
-  position: relative;
-
-  margin-bottom: 10px;
-}
-
 .block-modal-form .input-modal {
   padding-left: 42px;
   width: 100%;
@@ -736,15 +755,19 @@ img {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition: border var(--timing-function);
 }
 
 .block-user-data .package-icon-form {
   position: absolute;
   top: 50%;
   left: 12px;
+
+  transition: fill var(--timing-function);
 }
 
-.block-modal-form .input-modal:focus {
+.modal-label .input-modal:focus {
   border: 1px solid var(--accent-color);
   outline: none;
 }
@@ -764,14 +787,16 @@ img {
   padding-bottom: 12px;
   padding-right: 16px;
 
-  font-size: 14px;
+  /* font-size: 14px;
   line-height: 1.1;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.01em; */
 
-  color: rgba(117, 117, 117, 0.5);
+  /* color: rgba(117, 117, 117, 0.5); */
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition: border var(--timing-function);
 }
 
 .block-modal-form .modal-form-comment:focus {
@@ -779,9 +804,44 @@ img {
   outline: none;
 }
 
-/* Соглашенние с рассылкой */
-.agreemenr-modal {
+/* Соглашенние с рассылкой. ЧЕКБОКС */
+.modal-form .agreemenr-modal {
   margin-bottom: var(--card-set-gap);
+}
+
+.agreemenr-modal .check-modal-label {
+  display: flex;
+  align-items: center;
+}
+
+.check-modal-label .check-modal {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.agreemenr-modal .check-icon {
+  width: 16px;
+  height: 15px;
+
+  margin-right: 7px;
+
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
+}
+
+.check-modal-label .check-modal:checked + .check-icon {
+  border: transparent;
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
 }
 
 .agreemenr-modal .check-modal-label {
@@ -792,6 +852,8 @@ img {
 }
 
 .modal-treaty {
+  margin-left: 5px;
+
   color: var(--accent-color);
 }
 
