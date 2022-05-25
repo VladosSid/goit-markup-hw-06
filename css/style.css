@@ -846,8 +846,8 @@ img {
   transition: border-color var(--timing-function), background var(--timing-function);
 }
 
-.check-modal-label:hover .check-icon,
-.check-modal-label:focus .check-icon {
+.check-modal-label .check-modal:hover + .check-icon,
+.check-modal-label .check-modal:focus + .check-icon {
   border-color: var(--accent-color);
 }
 
@@ -872,6 +872,10 @@ img {
   margin-left: 5px;
 
   color: var(--accent-color);
+}
+
+.modal-treaty:hover {
+  text-decoration: none;
 }
 
 /* Кнопка отправки */
