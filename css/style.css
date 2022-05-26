@@ -891,13 +891,13 @@ img {
 
   background: var(--accent-color);
 
-  transform: scaleX(0);
+  transform: scaleX(0\1);
 
   transition: transform var(--timing-function);
 }
 
 .modal-treaty:hover::after {
-  transform: scaleX(1);
+  transform: scaleX(0);
   /* text-decoration: none; */
 }
 
